@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f34140-0362-45e5-94bc-4aa650f070f5" name="Changes" comment="" />
+    <list default="true" id="76f34140-0362-45e5-94bc-4aa650f070f5" name="Changes" comment="First">
+      <change beforePath="$PROJECT_DIR$/Spring_sec/src/main/resources/templates/admin_show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring_sec/src/main/resources/templates/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring_sec/src/main/resources/templates/new.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +20,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -41,6 +48,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "spring.configuration.checksum": "9d1c8b3750a109196413fb29a4639ce7",
     "vue.rearranger.settings.migration": "true"
@@ -70,8 +78,16 @@
       <updated>1681954643207</updated>
       <workItem from="1681954644389" duration="1872000" />
       <workItem from="1681997309464" duration="31119000" />
-      <workItem from="1682264062249" duration="24843000" />
+      <workItem from="1682264062249" duration="25156000" />
     </task>
+    <task id="LOCAL-00001" summary="First">
+      <created>1682292470354</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682292470354</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,5 +97,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="First" />
+    <option name="LAST_COMMIT_MESSAGE" value="First" />
   </component>
 </project>
