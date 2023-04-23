@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="menu1" th:fragment="new_user" class="pl-0 pr-0 tab-pane fade border bg-white rounded">
+    <nav class="navbar navbar-default bg-light mr-0 ml-0 border">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand disables text-dark text-style-bold" href="#">Add new user</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <form action="#" th:action="@{/admin/create}" th:object="${formUser}" method="post" class="ml-auto mr-auto d-flex flex-column justify-content-center align-items-center col-5">
+            <div class="form-group">
+                <label for="username" class="d-flex justify-content-center font-weight-bold">username</label>
+                <input type="text" th:field="*{username}" class="form-control" id="username" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label for="email" class="d-flex justify-content-center font-weight-bold">email</label>
+                <input type="text" th:field="*{email}" class="form-control" id="email" placeholder="Enter email">
+            </div>
+
+            <div class="form-group">
+                <label for="sel1" class="d-flex justify-content-center font-weight-bold">Enabled</label>
+                <select multiple class="form-control" style="width:250px" id="sel1" size="2" name="enabled">
+                    <option
+                            th:text="enabled"
+                            th:value="1">
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="d-flex justify-content-center font-weight-bold">Password</label>
+                <input type="password" th:field="*{password}" class="form-control" id="password" placeholder="Enter password">
+            </div>
+
+            <div class="form-group">
+                <label for="sel3" class="d-flex justify-content-center font-weight-bold">Role</label>
+                <select multiple class="form-control" style="width:250px" id="sel3" size="2" name="role">
+                    <option
+                            th:each="role : ${allRoles}"
+                            th:text="${role.name}"
+                            th:value="${role.id}">
+                    </option>
+                </select>
+            </div>
+            <button type="submit" class="d-flex justify-content-center btn btn-success">Add new user</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
